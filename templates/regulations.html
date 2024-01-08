@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HATE SPEECH DETECTOR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav">
+        <h1>Regulasi</h1>
+        <a href="/">Beranda</a>
+        <a class="active" href="/regulation">Regulasi</a>
+        <a href="/about">Tentang</a>
+    </div>
+    <div class="container">
+        <h1>Regulasi</h1>
+        <p> Regulasi digunakan sebagai panduan sistem dalam mengklasifikasikan video. Panduan dalam bentuk definisi hate speech, konteks, dan juga pelabelan video. 
+            Regulasi akan diambil dari beberapa penelitian atau penafsiran ahli terhadap pasal-pasal yang ada dan juga studi kasus dari pelanggaran yang pernah terjadi, 
+            dan juga dokumen resmi instansi negara.</p>
+        <p>Berikut adalah beberapa regulasi yang akan digunakan :</p>
+        <ul>
+            <li><h2>Pasal 156 KUHP</h2> </li>
+            <li><h2>Pasal 156a KUHP</h2></li>
+            <object
+            data="{{ url_for('static', filename='static/Analisis-Pasal-156-a-KUHP-dan-UU-No-1-tahun-1965-terkait-tindak-pidana-penodaan-agama-yang-terjadi-di-Jawa-Barat.pdf')}}"
+            type="application/pdf" style="min-height:100vh;width:100%"></object>
+            <li><h2>Pasal 45A ayat (2) jo. Pasal 28 ayat (2) UU ITE</h2></li>
+            <object
+            data="{{ url_for('static', filename='static/47780-123511-1-SM.pdf')}}"
+            type="application/pdf" style="min-height:100vh;width:100%"></object>
+            <li><h2>Surat Edaran Kapolri Nomor SE/6/X/2015</h2></li>
+            <object
+            data="{{ url_for('static', filename='static/SURAT-EDARAN-KAPOLRI-MENGENAI-PENANGANAN-UJARAN-KEBENCIAN.pdf')}}"
+            type="application/pdf" style="min-height:100vh;width:100%"></object>
+        </ul>
+    </div>
+</body>
+
+</html>
